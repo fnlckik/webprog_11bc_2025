@@ -12,6 +12,7 @@ https://download-directory.github.io/
 6. JavaScript eseménykezelés
 
 ## Ponthatárok (általában)
+
 | Alsó határ | Jegy |
 | :---: | :---: |
 | 0% | 1 |
@@ -19,6 +20,7 @@ https://download-directory.github.io/
 | 55% | 3 |
 | 70% | 4 |
 | 85% | 5 |
+
 Kerekítés: _többnyire_ .5-től fel, **de** 1.8 alatt bukás.
 
 ## Versenyek
