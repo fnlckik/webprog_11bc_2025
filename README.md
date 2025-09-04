@@ -31,7 +31,7 @@ Kerekítés: _többnyire_ .5-től fel, **de** 1.8 alatt bukás.
   - III\. Rajt: legjobb 8 csapat
   - Jelentkezés: szeptember vége???
   - Felvételi pont (Pannon Egyetem)
-- [Skills Junior 2025]((https://worldskillshungary.hu/juniorskills/juniorskills-2025/webfejleszto))
+- [Skills Junior 2025](https://worldskillshungary.hu/juniorskills/juniorskills-2025/webfejleszto)
 
 ## Eszközök - Webprog
 - [Visual Studio Code](https://code.visualstudio.com/)
