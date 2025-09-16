@@ -9,5 +9,4 @@ greengage.jpg
 italian-prune.jpg
 moyer.jpg
 myrobalan.jpg
-nevek.txt
 satsuma.jpg

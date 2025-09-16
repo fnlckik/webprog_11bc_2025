@@ -1,0 +1,61 @@
+
+        <div class="col">
+            <img src="images/gallery/black-amber.jpg" alt="black-amber" class="img-thumbnail" title="Black amber">
+            <p class="rounded">Black amber</p>
+        </div>
+     
+        <div class="col">
+            <img src="images/gallery/black-ruby.jpg" alt="black-ruby" class="img-thumbnail" title="Black ruby">
+            <p class="rounded">Black ruby</p>
+        </div>
+     
+        <div class="col">
+            <img src="images/gallery/black-splendor.jpg" alt="black-splendor" class="img-thumbnail" title="Black splendor">
+            <p class="rounded">Black splendor</p>
+        </div>
+     
+        <div class="col">
+            <img src="images/gallery/damson.jpg" alt="damson" class="img-thumbnail" title="Damson">
+            <p class="rounded">Damson</p>
+        </div>
+     
+        <div class="col">
+            <img src="images/gallery/elephant-heart.jpg" alt="elephant-heart" class="img-thumbnail" title="Elephant heart">
+            <p class="rounded">Elephant heart</p>
+        </div>
+     
+        <div class="col">
+            <img src="images/gallery/french-prune.jpg" alt="french-prune" class="img-thumbnail" title="French prune">
+            <p class="rounded">French prune</p>
+        </div>
+     
+        <div class="col">
+            <img src="images/gallery/friar.jpg" alt="friar" class="img-thumbnail" title="Friar">
+            <p class="rounded">Friar</p>
+        </div>
+     
+        <div class="col">
+            <img src="images/gallery/greengage.jpg" alt="greengage" class="img-thumbnail" title="Greengage">
+            <p class="rounded">Greengage</p>
+        </div>
+     
+        <div class="col">
+            <img src="images/gallery/italian-prune.jpg" alt="italian-prune" class="img-thumbnail" title="Italian prune">
+            <p class="rounded">Italian prune</p>
+        </div>
+     
+        <div class="col">
+            <img src="images/gallery/moyer.jpg" alt="moyer" class="img-thumbnail" title="Moyer">
+            <p class="rounded">Moyer</p>
+        </div>
+     
+        <div class="col">
+            <img src="images/gallery/myrobalan.jpg" alt="myrobalan" class="img-thumbnail" title="Myrobalan">
+            <p class="rounded">Myrobalan</p>
+        </div>
+     
+        <div class="col">
+            <img src="images/gallery/satsuma.jpg" alt="satsuma" class="img-thumbnail" title="Satsuma">
+            <p class="rounded">Satsuma</p>
+        </div>
+     
