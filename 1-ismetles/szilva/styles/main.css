@@ -16,3 +16,7 @@ main table {
     margin: 3% auto;
     background-color: var(--feher);
 }
+
+main {
+    display: none;
+}

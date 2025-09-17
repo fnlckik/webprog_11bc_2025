@@ -1,5 +1,49 @@
 header {
     padding: 2%;
-    font-family: Impact;
+    background-color: var(--lila);
+    color: var(--feher);
+    font-family: Impact, sans-serif;
+    font-size: 6vw; /* viewport width */
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    text-align: center;
 }
 
+/* Ez mi ez? (Ilyet ne!) */
+header .row div {
+    display: table;
+}
+
+header .row div p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer, footer div {
+    padding: 2%;
+    background-color: var(--lila);
+    color: var(--feher);
+}
+
+footer {
+    text-align: center;
+}
+
+#kapcsolat span {
+    font-weight: bold;
+    float: left;
+    width: calc(100% / 3);
+}
+
+#kozosseg img {
+    height: 1em;
+}
+
+#kozosseg a {
+    background-color: var(--feher);
+    color: darkblue;
+    text-decoration: none;
+    margin: 150px 150px 150px 150px;
+    /* padding: 5px 20px; */
+    display: inline-block;
+}

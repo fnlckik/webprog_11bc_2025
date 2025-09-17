@@ -1,0 +1,21 @@
+* {
+    --lila: rgb(139, 41, 139);
+    --feher: rgba(255, 255, 255, 0.8);
+}
+
+body {
+    padding: 2%;
+    background-color: #dda0dd;
+}
+
+hr {
+    opacity: 100%;
+}
+
+h1, h2, h3 {
+    font-family: fantasy;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    /* margin: 20px 0px 20px 0px; */
+    margin: 20px 0;
+}
