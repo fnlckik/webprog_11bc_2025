@@ -35,8 +35,14 @@ footer {
     width: calc(100% / 3);
 }
 
+/* Ne lóghassanak ki a benne lebegő elemek. */
+#kapcsolat {
+    overflow: auto;
+}
+
 #kozosseg img {
     height: 1em;
+    margin-right: 6px;
 }
 
 /* 
@@ -57,4 +63,21 @@ footer {
 #kozosseg a:hover {
     background-color: lightgray;
     color: black;
+}
+
+/* Akkor érvényes, ha az oldal szélessége max 675px. */
+/* (min-width: 200px) and (max-width: 675px) */
+@media (max-width: 675px) {
+    header {
+        letter-spacing: 0;
+    }
+
+    #kapcsolat span {
+        width: 100%;
+        margin: 2% auto;
+    }
+
+    #kozosseg p {
+        display: none;
+    }
 }
