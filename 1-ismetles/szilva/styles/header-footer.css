@@ -39,11 +39,22 @@ footer {
     height: 1em;
 }
 
+/* 
+    inline (span): egymás mellé, nincs height + margin
+    block (div): egymás alá, van height + margin
+    inline-block (~img): egymás mellé, van height + margin
+*/
 #kozosseg a {
     background-color: var(--feher);
     color: darkblue;
     text-decoration: none;
-    margin: 150px 150px 150px 150px;
-    /* padding: 5px 20px; */
+    margin: 12px;
+    padding: 5px 20px;
     display: inline-block;
+}
+
+/* Fölé visszük a kurzort */
+#kozosseg a:hover {
+    background-color: lightgray;
+    color: black;
 }
