@@ -1,3 +1,15 @@
+/* :root {
+    font-size: 30px;
+} */
+
+/* css reset */
+* {
+    /* font-size: 30px; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 header {
     padding: 2%;
     background-color: var(--lila);
@@ -79,5 +91,12 @@ footer {
 
     #kozosseg p {
         display: none;
+    }
+
+    #kozosseg a {
+        display: block;
+        width: 75%;
+        margin: 1rem auto;
+        padding: 1rem 20px;
     }
 }
