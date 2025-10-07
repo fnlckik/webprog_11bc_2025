@@ -71,4 +71,72 @@ article p {
 article ul {
     text-align: center;
     list-style-type: none;
+    padding-left: 0;
 }
+
+article ol {
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+article li {
+    margin: 1.5em;
+}
+
+article table {
+    width: 100%;
+}
+
+/* solid, dotted, dashed, double */
+article table td {
+    /* border: 1px dashed black; */
+    border: 1px solid black;
+    width: 50%;
+    height: 4em;
+}
+
+/* Egyebek */
+
+table {
+    /* border: 1px solid blue; */
+    border-collapse: collapse;
+}
+
+/* #bekezdes div {
+    font-size: 2rem;
+} */
+
+/* @media print {
+    body {
+        background-color: white;
+    }
+    footer, header {
+        display: none;
+    }
+    main article p {
+        font-size: 2em;
+    }
+} */
+
+/* #bekezdes div {
+    border: 1px solid black;
+    margin: 1em;
+}
+
+#belso {
+    position: sticky;
+    top: 0;
+}
+
+#kozosseg a:active {
+    color: red !important;
+}
+
+#kozosseg a:hover {
+    color: black;
+}
+
+#kozosseg a:visited {
+    color: green;
+} */
