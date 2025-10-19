@@ -1,0 +1,132 @@
+:root {
+    --feher: #f4f1ea;
+    --link: #e2d6c1;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--feher);
+    margin: 0;
+    line-height: 1.6em;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #3d5a40;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+header h1 {
+    color: var(--feher);
+    margin: 1em auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+main h2 {
+    margin: 2rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #8d8741;
+    padding: 0.5em;
+}
+
+th {
+    background-color: #b5c99a;
+}
+
+footer {
+    background-color: #3d5a40;
+    color: var(--feher);
+    padding: 0.8rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* --------------------------------------------- */
+/* --------- A vonal alá dolgozz csak! --------- */
+/* --------------------------------------------- */
+/* 🦆 */
+
+h1 {
+    font-style: italic;
+    font-family: "Trebuchet MS", sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+main p {
+    text-align: justify;
+}
+
+nav a {
+    color: var(--link);
+    text-decoration: none;
+    display: block;
+    margin: 0 10px;
+    padding: 1em;
+}
+
+a:hover {
+    background-color: rgba(30, 56, 30, 50%);
+    text-decoration: 1px solid underline;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    border: 2px dashed #781414;
+}
+
+.kiemelt {
+    font-weight: bold;
+}
+
+li {
+    list-style-type: "🦆";
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+}
+
+@media (min-width: 576px) {
+    img {
+        float: right;
+        margin-left: 1em;
+    }
+    
+    section {
+        overflow: auto;
+    }
+
+    nav a {
+        width: 30%;
+        display: inline-block;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    #bevezetes {
+        background-image: url(images/duck.png);
+        background-size: 65px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+}
