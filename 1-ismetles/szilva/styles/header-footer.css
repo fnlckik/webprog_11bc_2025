@@ -100,3 +100,9 @@ footer {
         padding: 1rem 20px;
     }
 }
+
+@media (max-width: 500px) {
+    #kozosseg {
+        background-color: red !important;
+    }
+}
