@@ -1,0 +1,56 @@
+body {
+    padding: 1em;
+}
+
+h1 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+}
+
+label, p, span {
+    margin: 0.5em 0;
+    /* background-color: rgb(255, 255, 230); */
+    padding: 0.25em;
+    width: fit-content;
+}
+
+label p {
+    padding: 0;
+    margin-top: 0;
+}
+
+label input {
+    margin-top: -2px;
+}
+
+label * {
+    vertical-align: middle;
+}
+
+input {
+    padding: 0.25em;
+}
+
+fieldset {
+    padding: 0 0.5em;
+    margin: 1em 0;
+    border-color: black;
+}
+
+.inline label {
+    display: inline-block;
+    margin: 0 0.5em 0.5em 0;
+}
+
+#polo {
+    margin: 0.25em;
+    margin-bottom: 1em;
+}
+
+/* ----------------------------------------------- */
+
