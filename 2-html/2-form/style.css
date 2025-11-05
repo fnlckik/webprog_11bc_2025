@@ -54,3 +54,27 @@ fieldset {
 
 /* ----------------------------------------------- */
 
+label {
+    display: block;
+}
+
+/* * {
+    user-select: none;
+} */
+
+input[type="reset"], input[type='submit'], input[type=button] {
+    cursor: pointer;
+    margin-bottom: 1em;
+    padding: 0.25em 0.5em;
+}
+
+/* pszeudo-szelektor */
+input:disabled {
+    cursor: not-allowed;
+}
+
+legend {
+    text-align: center;
+    padding: 1em;
+}
+

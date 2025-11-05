@@ -8,5 +8,25 @@
 </head>
 <body>
     <h1>Verseny regisztráció</h1>
+    <form action="verseny.html">
+        <!-- self-closing tag -->
+        <!-- <label for="nev">Név:</label>
+        <input type="text" id="nev"> -->
+        <fieldset>
+            <legend>Alapadatok</legend>
+            <label>Név: <input type="text" name="nev" value="Farkas Norbert" required></label>
+            <label>Város: <input type="text" name="varos"></label>
+            <label>Email: <input type="email"></label>
+            <label>Jelszó: <input type="password" name="jelszo" minlength="8"></label>
+            <label>Életkor: <input type="number" min="10" max="20" step="2" value="14"></label>
+            <label>Születési dátum: <input type="date" name="szuletes" min="2008-01-01" max="2015-12-31" value="2008-10-05"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Űrlap küldése</legend>
+            <input type="reset">
+            <input type="submit" value="Jelentkezés">
+            <input type="button" value="Gomb" disabled>
+        </fieldset>
+    </form>
 </body>
 </html>
