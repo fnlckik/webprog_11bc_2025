@@ -20,6 +20,61 @@
             <label>Jelszó: <input type="password" name="jelszo" minlength="8"></label>
             <label>Életkor: <input type="number" min="10" max="20" step="2" value="14"></label>
             <label>Születési dátum: <input type="date" name="szuletes" min="2008-01-01" max="2015-12-31" value="2008-10-05"></label>
+            <div class="inline">
+                <p>Nem:</p>
+                <label><input type="radio" name="nem" value="ferfi"> Férfi</label>
+                <label><input type="radio" name="nem" value="no"> Nő</label>
+                <label><input type="radio" name="nem" value="-"> Nem válaszolok</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Egyebek</legend>
+            <label>Kedvenc szín: <input type="color" name="szin" value="#FF0000"></label>
+            <label>Beugró feladat: <input type="file" multiple accept=".txt, .css"></label>
+            <label>
+                Mennyire szereted az óriási kisegeret?
+                <input type="range" min="0" max="10" name="kiseger" value="8">
+            </label>
+            <label>
+                <p>Póló méret:</p>
+                <select name="polo" multiple>
+                    <option>S</option>
+                    <option selected>M</option>
+                    <option selected>L</option>
+                    <option>XL</option>
+                    <option disabled>XXL</option>
+                </select>
+            </label>
+            <label>
+                Kategória:
+                <select name="kategoria">
+                    <optgroup label="Gimnázium">
+                        <option value="g9">9. évfolyam</option>
+                        <option value="g10">10. évfolyam</option>
+                        <option value="g11">11. évfolyam</option>
+                        <option value="g12">12. évfolyam</option>
+                    </optgroup>
+                    <optgroup label="Technikum">
+                        <option value="t9">9. évfolyam</option>
+                        <option value="t10">10. évfolyam</option>
+                        <option value="t11">11. évfolyam</option>
+                        <option value="t12">12. évfolyam</option>
+                        <option value="t13">13. évfolyam</option>
+                    </optgroup>
+                </select>
+            </label>
+            <label>
+                <p>Megjegyzés:</p>
+                <textarea rows="5" cols="50" placeholder="Pl.: laktóz érzékeny vagyok"></textarea>
+            </label>
+            <label>
+                <span>Azonosító:</span>
+                <input type="text" value="GKA3J2" readonly size="6">
+            </label>
+            <label>
+                <input type="checkbox" name="szabalyzat" required checked>
+                Elfogadom a verseny szabályzatát!
+            </label>
         </fieldset>
         <fieldset>
             <legend>Űrlap küldése</legend>

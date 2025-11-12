@@ -32,7 +32,8 @@ label * {
     vertical-align: middle;
 }
 
-input {
+/* Azok az inputok kapjanak padding-et, akik nem 'color' típusúak. */
+input:not(input[type='color']) {
     padding: 0.25em;
 }
 
@@ -68,7 +69,7 @@ input[type="reset"], input[type='submit'], input[type=button] {
     padding: 0.25em 0.5em;
 }
 
-/* pszeudo-szelektor */
+/* pszeudo-szelektor: Milyen állapotban van az elem? */
 input:disabled {
     cursor: not-allowed;
 }
@@ -78,3 +79,28 @@ legend {
     padding: 1em;
 }
 
+/* label:has(input[type="radio"]) {
+    background-color: lightblue;
+} */
+
+select[multiple] {
+    min-width: 50px;
+    max-width: 200px;
+    height: 100px;
+    width: 100px;
+    resize: both; /* horizontal, vertical */
+}
+
+textarea {
+    resize: none;
+}
+
+/* pszeudo-elem szelektor: Az elem egy részének formázása. */
+textarea::placeholder {
+    color: red;
+}
+
+input[readonly] {
+    text-align: center;
+    /* width: fit-content; */
+}
