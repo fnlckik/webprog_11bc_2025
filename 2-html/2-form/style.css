@@ -91,6 +91,10 @@ select[multiple] {
     resize: both; /* horizontal, vertical */
 }
 
+select[name="polo"], textarea {
+    margin-left: 6px;
+}
+
 textarea {
     resize: none;
 }
