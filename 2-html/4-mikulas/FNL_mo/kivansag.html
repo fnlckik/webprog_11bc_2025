@@ -38,10 +38,29 @@
                 <span>Jó</span>
             </div>
 
-        </fieldset>
+            <div>
+                <p>Hová kéred az ajándékot?</p>
+                <label><input type="radio" name="hely" value="1"> Karácsonyfa alá</label>
+                <label><input type="radio" name="hely" value="2" disabled> Kandalló mellé</label>
+                <label><input type="radio" name="hely" value="3"> Szoba</label>
+                <label><input type="radio" name="hely" value="4"> Meglepetés</label>
+            </div>
 
+        </fieldset>
+        
         <fieldset>
             <legend>Ajándék adatai</legend>
+            
+            <div>
+                <label>Milyen ajándékot szeretnél?</label>
+                <select name="ajandek">
+                    <option>Társasjáték</option>
+                    <option selected>Könyv</option>
+                    <option>Bicikli</option>
+                    <option>Fortnite skin</option>
+                    <option hidden>Pisztácia fagyi</option>
+                </select>
+            </div>
 
             <p id="ajandek">Idén minden kívánság mellé ajándék szaloncukor jár!</p>
         </fieldset>
