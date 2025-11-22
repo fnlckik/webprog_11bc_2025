@@ -164,3 +164,33 @@ header {
 
 /* További CSS */
 
+/* header {
+    position: relative;
+}
+
+audio {
+    position: absolute;
+    right: 0;
+} */
+
+input[type="submit"] {
+    padding: 0.5em;
+    font-weight: bold;
+    margin: auto;
+    display: block;
+    width: 5em;
+    cursor: pointer;
+}
+
+iframe[name] {
+    /* height: 13vw; */
+    height: 720px;
+}
+
+input[type="tel"]::placeholder {
+    font-style: italic;
+}
+
+input:focus {
+    color: green;
+}

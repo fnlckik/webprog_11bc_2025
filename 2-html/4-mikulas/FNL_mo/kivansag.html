@@ -26,18 +26,17 @@
     <form action="kivansag.html">
         <fieldset>
             <legend>Adataid</legend>
-
             <label>Név: <input type="text"></label>
-
+    
             <label>Telefonszám: <input type="tel" placeholder="06 20 / 123 45 67"></label>
-
+            
             <label>Mennyire voltál jó? (csak őszintén)</label>
             <div class="center">
                 <span>Rossz</span>
-                <input type="range" min="1" max="100" name="jo">
+                <input type="range" min="1" max="100">
                 <span>Jó</span>
             </div>
-
+    
             <div>
                 <p>Hová kéred az ajándékot?</p>
                 <label><input type="radio" name="hely" value="1"> Karácsonyfa alá</label>
@@ -45,31 +44,50 @@
                 <label><input type="radio" name="hely" value="3"> Szoba</label>
                 <label><input type="radio" name="hely" value="4"> Meglepetés</label>
             </div>
-
         </fieldset>
-        
+
         <fieldset>
             <legend>Ajándék adatai</legend>
-            
             <div>
-                <label>Milyen ajándékot szeretnél?</label>
-                <select name="ajandek">
-                    <option>Társasjáték</option>
-                    <option selected>Könyv</option>
-                    <option>Bicikli</option>
-                    <option>Fortnite skin</option>
-                    <option hidden>Pisztácia fagyi</option>
+                Milyen ajándékot szeretnél?
+                <select>
+                    <option value="1">Társasjáték</option>
+                    <option value="2" selected>Könyv</option>
+                    <option value="3">Bicikli</option>
+                    <option value="4">Ruha</option>
+                    <option value="5">Fortnite skin</option>
+                    <option value="6" hidden>Pisztácia fagyi</option>
                 </select>
             </div>
-
+    
+            <label>
+                Ajándék részletes leírása:
+                <textarea cols="40" rows="4"></textarea>
+            </label>
+            
+            <label>Hány órára kéred? <input type="time" id="mikor" value="22:22"></label>
+            
+            <label>Milyen színű legyen a csomagolás? <input type="color" value="#001E96"></label>
+    
+            <label>Töltsd fel kézzel írt leveled is! <input type="file" accept=".png, .jpg, .pdf"></label>
+    
             <p id="ajandek">Idén minden kívánság mellé ajándék szaloncukor jár!</p>
+            <div>
+                <p>Melyik szaloncukor a kedvenced?</p>
+                <label><input type="radio" name="cukor" value="1"> Zselés</label>
+                <label><input type="radio" name="cukor" value="2"> Kókuszos</label>
+                <label><input type="radio" name="cukor" value="3"> Karamellás</label>
+            </div>
+            
+            <label><input type="checkbox" checked> Ígérem, hogy mindig jó leszek webprogramozás tanáromhoz, őszintén tisztelem és figyelem minden szavát!</label>
+            
+            <label><input type="checkbox" required> Fogadom, hogy soha többé nem kések egyetlen nulladik óráról sem, az evést becsöngetés előtt befejezem!</label>
         </fieldset>
 
-        <input type="submit" value="Felirat">
+        <input type="submit">
     </form>
 
     <h2>Karácsony - Agymenők stílusban</h2>
-    <video controls src="media/jingle-bells.mp4"></video>
-    
+    <video src="media/jingle-bells.mp4" controls></video>
 </body>
 </html>
