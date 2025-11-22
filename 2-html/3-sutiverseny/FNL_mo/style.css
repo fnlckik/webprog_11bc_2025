@@ -1,0 +1,67 @@
+:root {
+    --krem: rgba(255, 227, 194, 0.4);
+    --barna: rgba(166, 41, 41, 80%);
+}
+
+body {
+    background-color: var(--krem);
+    width: 75%;
+    border: 0.25em dashed var(--barna);
+    margin: 1em auto;
+    padding: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+p {
+    margin: 1em 0;
+}
+
+h1 {
+    margin-top: -0.2em;
+}
+
+input {
+    padding: 0.25em;
+}
+
+input:not([type="submit"]):not([type="reset"]) {
+    background-color: var(--krem);
+    border-radius: 5px;
+    border-color: var(--barna);
+}
+
+input:focus:not([type="submit"]) {
+    outline: var(--barna);
+}
+
+hr {
+    border: 1px solid black;
+    margin: 1.5em auto;
+}
+
+select, option {
+    padding: 0.2em;
+    font-size: 1.05em;
+    border-radius: 15px;
+}
+
+span {
+    vertical-align: middle;
+}
+
+input[type="range"] {
+    width: 50vw;
+    vertical-align: middle;
+}
+
+label {
+    display: block;
+    margin: 1em 0;
+}
+
+label:has(input[type='checkbox']) {
+    display: inline-block;
+    margin: 0;
+    margin-right: 1em;
+}

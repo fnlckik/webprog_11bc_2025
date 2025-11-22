@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sütiverseny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1>Nevezz a sulis sütisütő versenyre!</h1>
+        <p>Készíts mentes sütit és nyerd meg a fődíjat az osztályodnak!</p>
+
+        <hr>
+
+        <label>
+            Mi a neved? <input type="text" required>
+        </label>
+
+        <label>
+            Melyik osztályba jársz?
+            <select>
+                <option>11.a</option>
+                <option selected>11.b</option>
+                <option>11.c</option>
+            </select>
+        </label>
+
+        <div>
+            Milyen szakirányon tanulsz?
+            <label><input type="radio" name="szakirany" value="i1" checked>Szoftverfejlesztő</label>
+            <label><input type="radio" name="szakirany" value="i2">Rendszerüzemeltető</label>
+            <label><input type="radio" name="szakirany" value="k1">Vállalkozás ügyviteli ügyintéző</label>
+            <label><input type="radio" name="szakirany" value="k2">Pénzügyi-számviteli ügyintéző</label>
+        </div>
+
+        <hr>
+
+        <label>
+            Mi a süti neve? <input type="text">
+        </label>
+
+        <div>
+            <p>Mitől mentes a süti?</p>
+            <label><input type="checkbox"> Cukor</label>
+            <label><input type="checkbox"> Tej</label>
+            <label><input type="checkbox"> Glutén</label>
+        </div>
+
+        <label>
+            Hány percig kell sütni?
+            <input type="number" min="10" max="240">
+        </label>
+
+        <p>Hány fokon kell sütni?</p>
+        <div>
+            <span>0°</span>
+            <input type="range" min="0" max="240" value="180" name="fok">
+            <span>240°</span>
+        </div>
+
+        <label>Recept:</label>
+        <textarea rows="10" cols="50"></textarea>
+
+        <div>
+            <input type="reset" value="Törlés">
+            <input type="submit" value="Nevezés">
+        </div>
+    </form>
+</body>
+</html>
