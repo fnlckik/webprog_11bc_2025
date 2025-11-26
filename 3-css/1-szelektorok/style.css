@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Rubik+Bubbles&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -83,17 +85,90 @@ footer img {
 /* ---------------------------------------------- */
 /* Betűtípus */
 
+@font-face {
+    font-family: "Quite Magical";
+    src: url("Fonts/QuiteMagicalRegular-8VA2.ttf");
+}
 
+h1 {
+    text-align: center;
+    font-family: "Indie Flower";
+}
+
+h2 {
+    font-family: "Quite Magical";
+}
 
 /* ---------------------------------------------- */
 /* Mese */
 
+/* Kombinátor: (space), +, ~, ??? */
+/* +: következő testvér */
+/* ~: későbbi testvér */
+/* pseudo-element ::placeholder */
+h2 + p::first-line {
+    font-weight: bold;
+    color: darkred;
+}
 
+/* Milyen állapotban van? */
+/* psuedo-class :hover :focus :required */
+h2 + p::first-letter {
+    color: black;
+    initial-letter: 2;
+    margin-right: 0.25em;
+}
+
+h2 + p::selection {
+    color: black;
+    background-color: white;
+}
 
 /* ---------------------------------------------- */
 /* Törpök nevei */
 
+/* label[for] {
+    color: gray;
+} */
 
+br ~ label {
+    color: gray;
+    margin-right: 1em;
+}
+
+input:checked + label {
+    color: green;
+}
+
+input {
+    /* outline: 1px solid red; */
+    vertical-align: middle;
+}
+
+label {
+    /* outline: 1px solid red; */
+    vertical-align: middle;
+}
+
+/* Specificity: (id, class, type) */
+/* id */
+/* class, :pseudo-class */
+/* type, :pseudo-element */
+li:first-of-type {
+    color: darkred;
+}
+
+/* #kuka {
+    color: blue;
+}
+
+.kettes {
+    color: yellow;
+} */
+
+li {
+   color: green; 
+}
 
 /* ---------------------------------------------- */
 /* Disney rajzfilmek */
