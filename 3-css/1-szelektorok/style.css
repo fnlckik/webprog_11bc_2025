@@ -153,7 +153,7 @@ label {
 /* Specificity: (id, class, type) */
 /* id */
 /* class, :pseudo-class */
-/* type, :pseudo-element */
+/* type, ::pseudo-element */
 li:first-of-type {
     color: darkred;
 }
@@ -166,19 +166,58 @@ li:first-of-type {
     color: yellow;
 } */
 
-li {
+li:first-of-type ~ li {
    color: green; 
+}
+
+li::marker {
+    color: gold;
+    font-size: 1.5em;
+    /* content: "🚗 "; */
+}
+
+h2::before {
+    content: "🎄";
+    font-size: 1.25em;
+    margin-right: 0.5em;
+}
+
+/* li::after {
+    content: ";";
+}
+
+li:last-of-type::after {
+    content: "";
+} */
+
+li:not(:last-of-type)::after {
+    content: ";";
 }
 
 /* ---------------------------------------------- */
 /* Disney rajzfilmek */
 
+tr:first-of-type {
+    background-color: black;
+    color: white;
+}
 
+td:first-of-type, td:last-of-type {
+    text-align: center;
+}
+
+/* Azt a sort, ahol van kedvenc osztályú cella. */
+tr:has(td.kedvenc) {
+    background-color: lightgreen;
+}
 
 /* ---------------------------------------------- */
 /* Disney rajongók */
 
-
+table:last-child {
+    border-collapse: separate;
+    border-spacing: 1em;
+}
 
 /* ---------------------------------------------- */
 /* Footer */
