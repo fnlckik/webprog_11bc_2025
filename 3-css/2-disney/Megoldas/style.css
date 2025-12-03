@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=JetBrains+Mono:wght@800&family=Oswald&family=Permanent+Marker&family=Rubik+Bubbles&family=Ubuntu:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    height: 100vh;
+    margin: 5vw;
+}
+
+h1 {
+    color: rgb(192, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    font-size: 3em;
+    background-image: url(images/disney_background.jpg);
+    background-position: center;
+}
+
+img {
+    width: 30em;
+    margin: 20px auto;
+    display: block;
+}
+
+p {
+    margin: 1em auto;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+}
+
+div {
+    margin: 3em auto;
+    padding: 1em;
+}
+
+form {
+    background-color: white;
+    padding: 2em;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 1em auto;
+}
+
+input[type="radio"] {
+    margin-right: 0.25em;
+}
+
+/* 
+--------------------------------------------- 
+További CSS beállítások
+---------------------------------------------  
+*/
+
+/* 
+--------------------------------------------- 
+Képek, szegélyek, árnyékok
+---------------------------------------------  
+*/
+
+/* bal-felső, jobb-felső, jobb-alsó, bal-alsó */
+img:first-of-type {
+    background-color: gray;
+    padding: 5px;
+    border: 5px solid yellow;
+    outline: 5px solid black; /* külső szegély */
+    box-shadow: -10px 10px green, 10px -10px blue;
+    border-radius: 100px 20px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 50px; */
+}
+
+/* Jó lenne a :last-child is, csak <script> tag live server miatt. */
+img:last-of-type {
+    border-radius: 50%;
+    border: 2px dashed black;
+    /* width: 300px;
+    height: 300px; */
+}
+
+h1 {
+    font-family: "Permanent Marker";
+    text-shadow: 0 0 3px black, 2px 3px black;
+}
+
+/* 
+--------------------------------------------- 
+Bekezdések (3 db), színátmenet
+---------------------------------------------  
+*/
+
+/* lineáris színátmenet */
+div {
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px black;
+    background: linear-gradient(blue 20%, black, red 30%);
+    /* TODO */
+}
+
+/* 
+--------------------------------------------- 
+Form elemek
+---------------------------------------------  
+*/
+
+
+
+/* 
+--------------------------------------------- 
+Átlátszó háttérkép
+---------------------------------------------  
+*/
+
+
