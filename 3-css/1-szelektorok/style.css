@@ -102,9 +102,10 @@ h2 {
 /* ---------------------------------------------- */
 /* Mese */
 
-/* Kombinátor: (space), +, ~, ??? */
+/* Kombinátor: (space), +, ~, > */
 /* +: következő testvér */
 /* ~: későbbi testvér */
+/* >: közvetlen leszármazott (gyermek) */
 /* pseudo-element ::placeholder */
 h2 + p::first-line {
     font-weight: bold;
@@ -219,6 +220,34 @@ table:last-child {
     border-spacing: 1em;
 }
 
+/* tr:nth-child(3), tr:nth-child(5), tr:nth-child(7), tr:nth-child(9) {
+    background-color: lightcoral;
+} */
+
+/* odd: 2n+1 */
+/* n = 0, 1, 2, ... */
+/* nth-child(An+B) -> B, B+A, B+2A, B+3A, ... */
+article table tr:nth-child(2n+1):not(:first-child) {
+    background-color: lightcoral;
+}
+
+/* even: 2n */
+article table tr:nth-child(2n) {
+    background-color: lightblue;
+}
+
 /* ---------------------------------------------- */
 /* Footer */
 
+footer p {
+    text-align: center;
+}
+
+/* footer p:not(div p) {
+    color: darkred;
+} */
+
+/* >: közvetlen leszármazott */
+footer>p {
+    color: darkred;
+}
