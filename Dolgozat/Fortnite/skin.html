@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const i = Math.floor(Math.random()*7 + 1);
+        const name = `skin${i}.png`;
+        const img = `<img src="skins/${name}">`;
+        document.querySelector("body").innerHTML = img;
+    </script>
+</body>
+</html>

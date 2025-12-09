@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite - Regisztráció</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pictures/fortnite-icon.jpg">
+</head>
+<body>
+    <form>
+        <h1>Regisztrálj és játssz!</h1>
+
+        <label>Felhasználónév: <input type="text"></label>
+        
+        <label>Email: <input type="email" placeholder="Pl.: epicloot@ckik.hu"></label>
+        
+        <label>Jelszó: <input type="password"></label>
+        
+        <label>Életkor: <input type="number" min="12" max="90" value="16"></label>
+
+        <label>Platform:</label>
+        <label><input type="radio" name="platform" value="1"> PC</label>
+        <label><input type="radio" name="platform" value="2">Xbox One</label>
+        <label><input type="radio" name="platform" value="3">PS4</label>
+
+        <label>
+            Bemutatkozó szöveg: 
+            <textarea cols="25" rows="5"></textarea>
+        </label>
+
+        <label>
+            Kedvenc karakter: 
+            <select name="karakter">
+                <option>Jonesy</option>
+                <option>Raider</option>
+                <option selected>Raven</option>
+                <option>Skully</option>
+            </select>
+        </label>
+
+        <label>Napi frissítés ideje: <input type="time" name="frissites" value="20:40"></label>
+        
+        <label>Szelfi a phpMyAdmin-nal: <input type="file" accept=".png, .jpg, .bmp, .gif" multiple></label>
+
+        <label>
+            <input type="checkbox"> 
+            Elismerem, hogy a webprogramozás fontosabb, mint a Fornite!
+        </label>
+
+        <label>
+            <input type="checkbox" required checked>
+            Ígérem, hogy nem iszok a teremben, mosdóba szünetben megyek!
+        </label>
+
+        <a href="feltetelek.html">*Felhasználási feltételek</a>
+        <input type="submit" value="Regisztráció">
+    </form>
+</body>
+</html>

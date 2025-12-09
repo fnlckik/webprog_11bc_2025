@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Fortnite";
+    src: url("font/Burbank-Big-Condensed-Black.otf") format("opentype");
+}
+
+html {
+    background-color: #9d4dbb;
+}
+
+h1, h2 {
+    font-family: "Fortnite";
+    margin-left: 0.5em;
+}
+
+p {
+    text-indent: 1em;
+    text-align: justify;
+    padding: 0 1em;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
+    border-left: 2px dotted black;
+    border-right: 2px dotted black;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 80%);
+    font-size: 1.5em;
+}
+
+video {
+    width: 80%;
+    margin: 1em auto;
+    display: block;
+}
+
+/* Skin-ek */
+
+iframe {
+    width: 500px;
+    height: 480px;
+    display: block;
+    margin: 1em auto;
+    border: 2px solid black;
+}
+
+iframe[name] {
+    width: 300px;
+    height: 210px;
+    border: 0;
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    font-size: 1.05rem;
+    font-family: "Comic Sans MS";
+}
+
+#reg {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    padding: 2% 10%;
+}
+
+#reg:hover {
+    background-color: rgb(255, 255, 150);
+    transition: 0.25s;
+}
+
+#reg:not(:hover) {
+    transition: 0.25s;
+}
+
+a:hover {
+    color: blue;
+}
+
+/* Form */
+
+form {
+    font-family: "Fortnite";
+    background-color: white;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+input[type='submit'] {
+    font-family: "Fortnite";
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+form h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 1em 0 1em 0.25em;
+    width: fit-content;
+}
+
+label:has(input[type='radio']) {
+    display: inline-block;
+    margin: 0;
+    margin-right: 0.5em;
+}
+
+input {
+    padding: 2px;
+}
+
+label:has(input[type='checkbox']:checked)::after {
+    content: " 💖";
+    font-size: 0.8em;
+    vertical-align: top;
+}
+
+textarea {
+    display: block;
+    margin-top: 0.5em;
+}

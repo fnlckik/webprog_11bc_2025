@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Merülj el a Fortnite világában, fedezz fel egyedi skin-eket és élvezd a fantasztikus játékélményt!">
+    <link rel="icon" href="pictures/fortnite-icon.jpg">
+</head>
+<body>
+    <header>
+        <h1>Üdvözöllek a Fortnite világában!</h1>
+    </header>
+    
+    <main>
+        <p>Köszöntünk a Fortnite kezdőlapján! Fedezd fel a játék izgalmas világát, küzdj meg más játékosokkal, építs hatalmas szerkezeteket és szerezz különleges tárgyakat. Válaszd meg a karaktered, válasszstratégiát és légy részese ennek a fantasztikus élménynek!</p>
+
+        <video src="commercial/teaser.mp4" controls muted loop poster="pictures/poster.png"></video>
+
+        <a href="regisztracio.html" id="reg">Regisztráció</a>
+
+        <h2>Skin-ek</h2>
+        <p>A Fortnite skin-ek egyedi karaktermegjelenéseket jelentenek, amelyek különböznek az alapértelmezett kinézettől. Ezeket a játékosok vásárolhatják vagy szerezhetik meg azáltal, hogy játszanak. A skin-ek nem befolyásolják a játék teljesítményét, hanem kizárólag esztétikai és szórakoztató elemek a Fortnite világában.</p>
+        <a href="skin.html" target="skin">Mutass egy random skin-t!</a>
+        <iframe name="skin"></iframe>
+
+        <h2>Fortnite crossword</h2>
+        <iframe src="https://crosswordlabs.com/embed/fortnite-393"></iframe>
+    </main>
+
+    <script>
+        document.querySelector("p+a").onclick = () => {
+            document.querySelector("a+iframe").style.display = "block";
+        };
+    </script>
+</body>
+</html>
