@@ -100,11 +100,18 @@ Bekezdések (3 db), színátmenet
 */
 
 /* lineáris színátmenet */
+/* to right, 0.25turn, 90deg*/
 div {
     border-radius: 10px;
     box-shadow: 10px 10px 30px black;
-    background: linear-gradient(blue 20%, black, red 30%);
-    /* TODO */
+    background: linear-gradient(to bottom, blue 5%, black 45% 55%, red 95%);
+}
+
+body {
+    background: linear-gradient(45deg, gold, lightblue);
+    /* background-repeat: no-repeat; */
+    height: max-content;
+    min-height: 100vh; /* viewport height */
 }
 
 /* 
@@ -113,6 +120,10 @@ Form elemek
 ---------------------------------------------  
 */
 
+form {
+    border-radius: 4em 8em 2em 2em;
+    background: radial-gradient(farthest-side circle at 50% 50%, yellow 50%, white 50%);
+}
 
 
 /* 
