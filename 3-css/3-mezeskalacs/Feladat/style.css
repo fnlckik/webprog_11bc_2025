@@ -1,0 +1,167 @@
+:root {
+    --barna: #8B4513;
+    --voros: #b53737;
+    --vilagosbarna: #f8f0e3;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--vilagosbarna);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--barna);
+    color: #fff;
+    font-family: "Cinzel Decorative";
+}
+
+div div {
+    font-size: 0.8em;
+}
+
+body > div {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+img {
+    width: 40%;
+    float: left;
+    margin: 0 5%;
+}
+
+hr {
+    visibility: hidden;
+    clear: both;
+}
+
+h2 {
+    padding-top: 0.5em;
+    color: var(--barna);
+}
+
+button {
+    background-color: var(--barna);
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--voros);
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+table {
+    max-width: 100%;
+    width: fit-content;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border: 2px dashed black;
+    background-color: var(--vilagosbarna);
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+th, td {
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    width: fit-content;
+    background-color: white;
+}
+
+th {
+    background-color: var(--barna);
+    color: #fff;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form br {
+    content: "";
+    display: block;
+    margin: 1em 0;
+}
+
+footer {
+    background-color: var(--barna);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* -------------------------------------------------- */
+
+/* F1 */
+
+
+/* F2 */
+
+
+/* F3 */
+
+
+/* F4 */
+
+
+/* F5 */
+
+
+/* F6 */
+
+
+/* F7 */
+
+
+/* F8 */
+
+
+/* F9 */
+
+
+/* F10 */
+
+
+/* F11 */
+
+
+/* F12 */
+
+
+/* F13 */
+
+
+/* F14 */
+
+
+/* F15 */
+
