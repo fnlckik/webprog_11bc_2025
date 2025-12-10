@@ -18,8 +18,6 @@ h1 {
     text-align: center;
     padding: 1rem;
     font-size: 3em;
-    background-image: url(images/disney_background.jpg);
-    background-position: center;
 }
 
 img {
@@ -120,11 +118,45 @@ Form elemek
 ---------------------------------------------  
 */
 
+/* farthest-side, closest-side, closest-corner, ... */
 form {
     border-radius: 4em 8em 2em 2em;
-    background: radial-gradient(farthest-side circle at 50% 50%, yellow 50%, white 50%);
+    background: radial-gradient(circle at 100% 0%, gold 10%, white 25%);
+    /* background: conic-gradient(red 25%, white 25% 35%, green 35%); */
+    /* border-radius: 50%;
+    height: 200px;
+    width: 200px; */
+    box-shadow: 0px 0px 15px 5px black inset;
 }
 
+/* label:not(:first-child):not(:last-child) {
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid black;
+} */
+
+label:has(input[type='radio']) {
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/* peachpuff */
+label:has(input[type='radio']:not(:checked)):hover {
+    background-color: peachpuff;
+    cursor: pointer;
+}
+
+input[type='checkbox']:checked {
+    display: none;
+}
+
+label:has(input[type='checkbox']:checked)::before {
+    content: "✓";
+    font-size: 0.8em;
+    color: green;
+}
 
 /* 
 --------------------------------------------- 
@@ -132,4 +164,26 @@ form {
 ---------------------------------------------  
 */
 
+/* Nem a h1-nek lesz háttere! */
+/* A h1-nek hozok létre egy hátteret! */
+h1 {
+    position: relative;
+}
 
+h1::after {
+    content: "";
+    background-image: url(images/disney_background.jpg);
+    background-position: center;
+    position: absolute;
+    /* left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+    inset: 0;
+    z-index: -1;
+    opacity: 60%;
+}
+
+/* h1 {
+    opacity: 60%;
+} */
