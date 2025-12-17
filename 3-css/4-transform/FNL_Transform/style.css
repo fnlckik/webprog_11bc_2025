@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+}
+
+div {
+    width: 100px;
+    height: 40px;
+    background-color: bisque;
+    border: 1px solid black;
+    margin: 1em;
+    display: inline-block;
+}
+
+h2 {
+    margin: 1em auto;
+}
+
+hr {
+    border: 2px solid black;
+    margin: 1em auto;
+}
+
+img {
+    display: block;
+    margin: 1em;
+    width: 300px;
+    border: 4px solid black;
+    background-color: beige;
+    padding: 1em;
+}
+
+/* ------------------------------ */
+
+/* Forgatás */
+
+/* transition: <property> <time> <delay> */
+#d1 {
+    /* transform: rotate(0deg); */
+    /* border-radius: 0 */
+    transition: transform 1s, border-radius 0.5s 1s, background-color 3s;
+    /* border-top-left-radius: 20px; */
+}
+
+#d1:hover {
+    transform: rotate(-30deg);
+    /* rotate: -30deg; */
+    border-radius: 40px 0 0 0;
+    background-color: black;
+    /* box-shadow: 0 0 15px black; */
+}
+
+div {
+    transition: transform 1s;
+}
+
+#d2:hover {
+    transform: rotate(60deg);
+}
+
+#d3:hover {
+    transform: rotateY(60deg);
+}
+
+/* Nagyítás */
+
+#d4:hover {
+    transform: scale(1.25);
+}
+
+#d5:hover {
+    transform: scale(2, 0.5);
+}
+
+#d6:hover {
+    transform: scaleY(0.5);
+}
+
+/* Eltolás */
+
+#d7:hover {
+    transform: translateX(20px);
+}
+
+#d8:hover {
+    transform: translate(1em, -20px);
+}
+
+#d9:hover {
+    transform: translateY(25%);
+}
+
+/* Középre igazítás! */
+
+#kozepre {
+    /* text-align: center; */
+    position: relative;
+}
+
+#kozepre a {
+    /* background-color: blue; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* END */
+
+/* Ferdítés */
+
+#d10:hover {
+    transform: skewX(30deg);
+}
+
+#d11:hover {
+    transform: skew(30deg, 10deg);
+}
+
+/* Középpont helye? */
+
+#d12 {
+    transform-origin: 0% 0%;
+}
+
+#d12:hover {
+    transform: scale(0.5) rotate(90deg);
+}
+
+#d13 {
+    transform-origin: 50% 0%;
+}
+
+#d13:hover {
+    transform: scale(1.5) rotate(45deg);
+}
