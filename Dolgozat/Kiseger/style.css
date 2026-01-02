@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: #333;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    color: rgb(138, 114, 72);
+    margin: 1rem 0;
+}
+
+p {
+    margin-bottom: 25px;
+    text-align: justify;
+    text-indent: 24px;
+    font-family: cursive;
+    line-height: 1.75em;
+}
+
+/* Táblázat stílusa */
+table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #fff;
+    margin: auto;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+table th {
+    background-color: rgb(138, 114, 72);
+    color: white;
+}
+
+td {
+    width: fit-content;
+}
+
+/* Űrlap stílusa */
+form {
+    padding: 1em;
+    border: 1px solid black;
+    background-color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    margin-top: 15px;
+    padding: 10px 15px;
+}
+
+form label {
+    padding: 0.5em 0 1em;
+    margin: 0.25em auto;
+    display: block;
+}
+
+img {
+    height: 145px;
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    clear: both;
+}
+
+h2 {
+    clear: both;
+}
+
+article {
+    padding: 1rem;
+}
+
+/* --------------------------------- */
+/*             Feladatok             */
+/* --------------------------------- */
+
+/* Láng emoji: 🔥 */
+
+/* F1 */
+img {
+    border-radius: 50px 20px;
+    box-shadow: 3px 2px 12px black;
+}
+
+/* F2 */
+h2 {
+    text-shadow: -1px -1px 1px black;
+}
+
+/* F3 */
+body {
+    background: linear-gradient(225deg, rgb(200, 200, 200), white);
+}
+
+/* F4 */
+label:has(input:checked) {
+    outline: 3px dashed brown;
+}
+
+/* F5 */
+td:first-child::first-letter {
+    text-transform: uppercase;
+}
+
+/* F6 */
+tr:nth-of-type(5) td:last-child::after {
+    content: " 🔥";
+}
+
+/* F7 */
+input:not(input[type="text"]):hover {
+    cursor: pointer;
+}
+
+/* F8 */
+img:nth-of-type(2) + p span {
+    font-weight: bold;
+    color: darkred;
+}
+
+/* F9 */
+@font-face {
+    font-family: "Eater";
+    src: url("Eater-Regular.ttf");
+}
+
+h1 {
+    font-family: "Eater";
+}
+
