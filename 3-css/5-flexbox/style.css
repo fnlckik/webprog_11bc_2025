@@ -39,25 +39,60 @@ hr {
 /* -------------- Flexbox -------------- */
 
 /* 1. Dinamikus méret */
+/* .elem {
+    display: inline-block;
+} */
 
+.flexibilis {
+    display: flex;
+}
 
 /* 2. "Vízszintes" igazítás */
-
+/* start, center, end */
+/* space-between, space-around, space-evenly */
+#b2 {
+    justify-content: space-evenly;
+}
 
 /* 3. "Függőleges" igazítás */
-
+/* start, center, end */
+#b3 {
+    height: 300px;
+    align-items: center;
+}
 
 /* 4. Igazítás iránya */
-
+/* justify-content: elsődleges tengely szerint igazít */
+/* align-items: másodlagos tengely szerint igazít */
+/* row (default), column */
+#b4 {
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* 5. Tördelés */
-
+/* nowrap (default), wrap */
+#b5 {
+    flex-wrap: wrap;
+}
 
 
 /* --------------- Elemek --------------- */
 
 /* 6. Elemek sorrendje */
+#b6 .e1 {
+    order: 2;
+}
 
+#b6 .e2 {
+    order: 3;
+}
+
+#b6 .e3 {
+    order: 1;
+}
 
 /* 7. Elemek igazítása */
 /* Elem magasságok is flexibilisek! */
