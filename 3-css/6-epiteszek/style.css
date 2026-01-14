@@ -98,7 +98,34 @@ strong {
 /* ---------------------------------------------------------------- */
 
 /* Menü (header) */
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+header nav {
+    flex-grow: 1;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: flex;
+    flex-grow: 1;
+}
+
+header nav ul li a {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header nav ul li:first-of-type {
+    order: 1;
+}
 
 /* Fő tartalmi rész (main) */
 /* "Hirdetés" magassága: 60vh */
@@ -109,6 +136,9 @@ strong {
 
 /* Linkekre rámutatva sötétebb háttér */
 /* 10%-os fekete */
+a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
 
 
 /* Aláhúzás (linkek) */
@@ -130,7 +160,17 @@ strong {
 /* Ajánlatok - kártyák */
 /* Kihagyás köztük: 2em */
 /* Kártya alapméret: 250px */
+#ajanlatok {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
 
+.kartya {
+    /* flex-basis: 250px; */
+    flex-grow: 1;
+    width: 250px;
+}
 
 /* Töréspont 552px-nél */
 /* Ne legyenek menü aláhúzások! */
