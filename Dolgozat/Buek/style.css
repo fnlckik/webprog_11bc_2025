@@ -1,0 +1,179 @@
+:root {
+    --primary: #1e3a8a;
+    --secondary: #f59e0b;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    background: #312e81;
+    color: white;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: auto;
+    margin-top: 0.5em;
+    opacity: 0.9;
+    max-width: 1070px;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    background-color: var(--card);
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+th {
+    background-color: var(--primary);
+    color: white;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input, select, textarea {
+    padding: 0.6rem;
+    border: 1px solid #cbd5f5;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+textarea + * {
+    background: #fbbf24;
+    border: none;
+    color: #1f2933;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+video {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: -6px;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #020617;
+    color: #e5e7eb;
+}
+
+footer a {
+    color: #fde68a;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------- */
+/* ------------------- Feladatok ------------------- */
+/* ------------------------------------------------- */
+
+/* F4 */
+
+
+
+/* F5 */
+
+
+
+/* F6 */
+
+
+
+/* F7 */
+
+
+
+/* F8 */
+
+
+
+/* F9 */
+
+
+
+/* F10 */
+
+
+
+/* F11 */
+
+
