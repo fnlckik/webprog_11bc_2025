@@ -29,9 +29,9 @@
     <section>
         <h2>Ünnepi pillanatok</h2>
         <div class="image-grid">
-            <img href="images/tuzijatek.jpg" alt="Tűzijáték">
-            <img href="images/2026.jpg" alt="2026">
-            <img href="images/pezsgo.jpg" alt="Pezsgő">
+            <img src="images/tuzijatek.jpg" href="images/tuzijatek.jpg" alt="Tűzijáték">
+            <img src="images/2026.jpg" alt="2026">
+            <img src="images/pezsgo.jpg" alt="Pezsgő">
         </div>
     </section>
 
@@ -68,17 +68,37 @@
 
     <section>
         <h2>Tüzijáték</h2>
+        <video src="media/fireworks.mp4" autoplay muted loop></video>
     </section>
 
     <section>
         <h2>Újévi kérdőív</h2>
         <form>
+            <label>Név: <input type="text" placeholder="Írd be a neved..."></label>
+            <label>Életkor: <input type="number" min="1" max="120" name="kor"></label>
+
             <label>Fogadalom kategóriája:</label>
+            <select name="kategoria">
+                <option>Egészség</option>
+                <option>Pénzügyek</option>
+                <option selected>Tanulás</option>
+                <option>Utazás</option>
+            </select>
             
             <label>Hogyan ünnepelsz?</label>
+            <div>
+                <label><input type="radio" name="tarsasag" value="csalad"> Családdal</label>
+                <label><input type="radio" name="tarsasag" value="baratok"> Barátokkal</label>
+                <label><input type="radio" name="tarsasag" value="egyedul"> Egyedül</label>
+            </div>
+
+            <label><input type="checkbox"> A tavalyi fogadalmam sikerült betartani!</label>
 
             <label for="uzenet">Fogadalmam az új évre:</label>
             <textarea id="uzenet"></textarea>
+
+            <input type="submit" value="Beküldés">
+             <!-- <button>Beküldés</button> -->
         </form>
     </section>
 

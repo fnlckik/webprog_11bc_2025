@@ -147,33 +147,53 @@ footer a {
 /* ------------------------------------------------- */
 
 /* F4 */
-
+#alcim {
+    text-align: right;
+}
 
 
 /* F5 */
-
+.kiemelt {
+    font-weight: bold;
+    font-style: italic;
+}
 
 
 /* F6 */
-
+section {
+    border-radius: 16px;
+    box-shadow: 4px 3px 20px gray;
+}
 
 
 /* F7 */
-
+/* button:hover */
+input[type="submit"]:hover {
+    background-color: #f59e0b;
+    color: white;
+}
 
 
 /* F8 */
-
+label:has(input[type="radio"]):not(:first-of-type) {
+    margin-left: 1em;
+}
 
 
 /* F9 */
-
+tr:nth-child(2n+1) {
+    background-color: rgb(230, 230, 255);
+}
 
 
 /* F10 */
-
+td:nth-child(2)::after {
+    content: "%";
+}
 
 
 /* F11 */
-
+body {
+    background: linear-gradient(120deg, lightblue 20%, lightyellow 80%);
+}
 
