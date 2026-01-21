@@ -132,7 +132,28 @@ header nav ul li:first-of-type {
 /* Kép: fent középre pozícionálva takar */
 /* Kép szélessége 200px, nem csökkenhet */
 /* Kimaradó részt a szöveg tölti ki! */
+#hirdetes {
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+#szoveg {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#kep {
+    background-image: url("epitesz.jpg");
+    background-size: cover;
+    background-position: top center;
+    width: 200px;
+    /* flex-grow: 1; */
+}
 
 /* Linkekre rámutatva sötétebb háttér */
 /* 10%-os fekete */
@@ -140,17 +161,47 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+a {
+    transition: all 0.5s;
+}
 
 /* Aláhúzás (linkek) */
 /* Magassága: 2px fekete vonal */
 /* Vigyázat: linkeken 1em padding van! */
 /* Megjelenés: 0.5s */
 /* Balról jobbra jön és megy */
+a {
+    position: relative;
+}
+
+nav ul li a:hover::after {
+    /* outline: 2px solid black; */
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+}
 
 
 /* "Bármit megvalósítunk" */
 /* 85%-ról 120%-ra növekedés */
+#szoveg p {
+    /* font-size: 85%; */
+    transform: scale(85%);
+    transition: transform 0.5s;
+}
 
+#hirdetes:hover #szoveg p {
+    /* font-size: 120%; */
+    transform: scale(120%);
+}
+
+#hirdetes:hover .keress {
+    transform: rotate(360deg);
+    transition: transform 1s 0.5s;
+    /* transition-delay: 0.5s; */
+}
 
 /* Keress felirat */
 /* kerek sarkok + mutató kurzor + shadow rámutatáskor 0.25s */
@@ -170,9 +221,16 @@ a:hover {
     /* flex-basis: 250px; */
     flex-grow: 1;
     width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* Töréspont 552px-nél */
 /* Ne legyenek menü aláhúzások! */
 /* A nagyított szöveg csak 100% legyen! */
-
+@media (max-width: 552px) {
+    #hirdetes:hover #szoveg p {
+        transform: scale(100%);
+    }
+}
