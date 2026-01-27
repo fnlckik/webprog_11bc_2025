@@ -170,17 +170,28 @@ a {
 /* Vigyázat: linkeken 1em padding van! */
 /* Megjelenés: 0.5s */
 /* Balról jobbra jön és megy */
-a {
+span {
     position: relative;
 }
 
-nav ul li a:hover::after {
+nav ul li a span::after {
     /* outline: 2px solid black; */
     content: "";
     height: 2px;
+    /* width: calc(100% - 2em); */
     width: 100%;
     background-color: black;
     position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+nav ul li a:hover span::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 
@@ -197,16 +208,24 @@ nav ul li a:hover::after {
     transform: scale(120%);
 }
 
+/* Keress felirat */
+/* kerek sarkok + mutató kurzor + shadow rámutatáskor 0.25s */
+/* forgás az előző nagyítása után 1s */
 #hirdetes:hover .keress {
     transform: rotate(360deg);
     transition: transform 1s 0.5s;
     /* transition-delay: 0.5s; */
 }
 
-/* Keress felirat */
-/* kerek sarkok + mutató kurzor + shadow rámutatáskor 0.25s */
-/* forgás az előző nagyítása után 1s */
+/* Gond: dupla transition tulajdonság kiüti egymást! */
+#hirdetes .keress {
+    transition: all 0.25s;
+}
 
+#hirdetes .keress:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 20px lightgoldenrodyellow;
+}
 
 /* Ajánlatok - kártyák */
 /* Kihagyás köztük: 2em */
