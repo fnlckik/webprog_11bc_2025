@@ -213,16 +213,17 @@ nav ul li a:hover span::after {
 /* forgás az előző nagyítása után 1s */
 #hirdetes:hover .keress {
     transform: rotate(360deg);
-    transition: transform 1s 0.5s;
+    transition: all 0.25s, transform 1s 0.5s;
     /* transition-delay: 0.5s; */
 }
 
 /* Gond: dupla transition tulajdonság kiüti egymást! */
-#hirdetes .keress {
+/* #hirdetes:hover .keress {
     transition: all 0.25s;
-}
+} */
 
 #hirdetes .keress:hover {
+    cursor: pointer;
     border-radius: 20px;
     box-shadow: 0 0 20px lightgoldenrodyellow;
 }
@@ -251,5 +252,9 @@ nav ul li a:hover span::after {
 @media (max-width: 552px) {
     #hirdetes:hover #szoveg p {
         transform: scale(100%);
+    }
+
+    nav ul li a::after {
+        display: none;
     }
 }
