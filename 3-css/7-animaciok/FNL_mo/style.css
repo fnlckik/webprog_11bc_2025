@@ -206,17 +206,23 @@ div.toltes {
 
 .forgo {
     height: 300px;
+    overflow: hidden;
 }
 
 .forgo img {
-    animation: csuszas 1s forwards;
+    animation: csuszas 5s infinite;
 }
 
+/* Képek: 20%(a)-10%(n)-20%(c)-10%(n) */
+/* Eltolódások: 10%-10%-10%-10% */
 @keyframes csuszas {
-    0% {
-        transform: translateY(0);
+    0%, 20%, 100% {
+        transform: translateY(0); /* alma */
     }
-    100% {
-        transform: translateY(-300px);
+    30%, 40%, 80%, 90% {
+        transform: translateY(-100%); /* narancs */
+    }
+    50%, 70% {
+        transform: translateY(-200%); /* citrom */
     }
 }
