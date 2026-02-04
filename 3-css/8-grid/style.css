@@ -49,7 +49,11 @@ hr {
 /* 1. Sorok, oszlopok */
 /* Sorok magassága: 50px */
 /* Oszlopok szélessége: 80-110-50-80*/
-
+.grid {
+    display: grid;
+    grid-template-columns: 80px 110px 50px 80px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+}
 
 
 
