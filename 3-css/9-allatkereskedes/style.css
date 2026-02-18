@@ -183,35 +183,91 @@ nav ul li a:hover {
 #csik {
     background: linear-gradient(to right, red, yellow, green);
     position: relative;
+    /* overflow: hidden; */
 }
 
 #csik::before {
     content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
+    /* width: 100%;
+    height: 100%; */
+    /* top: 0;
     left: 0;
+    right: 0;
+    bottom: 0; */
+    inset: 0;
     background-color: white;
     position: absolute;
     border-radius: 20px;
+    animation: toltes 3s forwards;
 }
 
 /* Értékelés animáció */
 
-
+@keyframes toltes {
+    0% {
+        left: 0;
+    }
+    25%, 100% {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    100% {
+        left: 90%;
+    }
+}
 
 
 /* ------------------------------------------------------------------- */
 /* Kategóriák formázása + áttűnés */
 
+/* main section:nth-child(3) > div { */
+div:has(div.kategoria) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em 0.5em;
+    justify-items: center;
+}
 
+.kategoria {
+    height: 280px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: border-radius 0.25s;
+    overflow: hidden;
+}
 
+.kategoria:hover {
+    border-radius: 50%;
+    border-style: solid;
+}
 
 /* ------------------------------------------------------------------- */
 /* Űrlap formázása */
 
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+    align-items: center;
+}
 
+.szeles {
+    grid-column: 1 / -1;
+}
 
+.szeles div {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+}
+
+.szeles div label {
+    /* flex-basis: 200px; */
+    width: 200px;
+    flex-grow: 1;
+}
 
 /* ------------------------------------------------------------------- */
 /* Űrlap animáció */
