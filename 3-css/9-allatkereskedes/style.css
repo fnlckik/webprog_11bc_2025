@@ -261,16 +261,30 @@ form {
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-evenly; */
+    column-gap: 2em;
 }
 
 .szeles div label {
     /* flex-basis: 200px; */
     width: 200px;
     flex-grow: 1;
+    border: 1px solid gray;
 }
 
 /* ------------------------------------------------------------------- */
 /* Űrlap animáció */
 
+input[type="radio"]:checked {
+    animation: nagyit 1s;
+}
+
+@keyframes nagyit {
+    0%, 100% {
+        transform: scale(1.25) rotateY(0);
+    }
+    50% {
+        transform: scale(2) rotateY(360deg);
+    }
+}
 
 
