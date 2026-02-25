@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Egy soros komment
+        /*
+            Több
+            soros
+            komment
+        */
+
+        // Történelem:
+        /*
+            1995 Dec - JavaScript
+            2015 => nagy update (ECMAScript6)
+
+            1995 May - Java
+            Semmi köze a JavaScripthez!
+
+            1995 May - MySQL
+            1995 June - PHP
+            Ezekhez végképp nincs köze!
+
+            1991 - Python
+            2000 - C#
+            1972 - C
+            1985 - C++
+        */
+
+        // JS jellemzők:
+        /*
+            0. Case sensitive
+            1. Interpretált (JS engine) ~ Python
+                - Ellentéte: fordított (C#)
+            2. Imperatív (utasítás vezérelt) ~ Python, C#
+                - Ellentéte: deklaratív (MYSQL)
+            3. Dinamikusan típusos ~ Python
+                - "Nem a változónak van típusa, hanem az értéknek."
+                - Ellentéte: statikus típusos (C#)
+            4. Objektumorientált (?)
+            5. Eseményvezérelt (?) ~ Scratch
+        */
+
+        // alert("Hello Világ!");
+        console.log("Hello Világ!");
+
+        // File -> Preferences -> Settings -> Snippet Suggestions (top)
+        // var (1995), let, const (2015)
+        // var: megengedi a többször deklarációt
+        // let: nem engedi meg a többszörös deklarációt
+        let nev = "Béla";
+        // let nev = prompt("Add meg a neved:");
+        console.log("Hello " + nev + "!");
+        console.log('Hello ' + nev + '!');
+        // console.log("Hello", nev, "!");
+
+        // Template literal ES6
+        console.log(`Hello ${nev}!`);
+
+        nev = "Jancsi";
+        nev = 5;
+        console.log(nev+2);
+    </script>
+</body>
+</html>
