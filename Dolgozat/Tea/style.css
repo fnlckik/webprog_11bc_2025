@@ -179,22 +179,72 @@ header {
 
 /* 9-10. Kancsó áttűnés */
 
-#belepes div:hover .kancso {
-    transform: rotateY(-90deg);
+#belepes div:hover span.kancso {
+    transform: rotate(-90deg);
 }
 
+#belepes div span.kancso {
+    transition: transform 1s;
+}
 
 /* 11. Pillanat kép animáció */
 
+#pillanat img {
+    animation: megjelenes 1s;
+}
 
-
+@keyframes megjelenes {
+    0%, 25% {
+        transform: scaleY(0);
+    }
+}
 
 /* 12. Footer */
 
-
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
 
 
 /* Bonusz!!! */
 
+.ajanlas {
+    position: relative;
+}
 
+.ajanlas::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+}
 
+.ajanlas:hover::before {
+    display: block;
+    animation: forgas 3s infinite;
+}
+
+@keyframes forgas {
+    0%, 100% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 100%;
+        top: 0;
+    }
+    50% {
+        left: 100%;
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+}
