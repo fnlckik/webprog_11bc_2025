@@ -17,12 +17,41 @@ function beolvas(termekek) {
 }
 
 // F2
-
+function osszesAr(termekek) {
+    let s = 0;
+    for (const termek of termekek) {
+        s += termek.ar;
+    }
+    const span = document.getElementById("koltseg");
+    span.innerText = s;
+}
 
 
 
 // F3
+function vanNulla(termekek) {
+    let i = 0;
+    while (i < termekek.length && !(termekek[i].ar % 10 === 0)) {
+        i++;
+    }
+    return i < termekek.length;
+}
 
+// x.toString() -> konvertálás stringgé
+function kerekAr(termekek) {
+    let span = document.querySelector("#nulla span");
+    if (!span) {
+        span = document.createElement("span");
+        const li = document.querySelector("#nulla");
+        li.appendChild(span);
+    }
+    span.innerText = vanNulla(termekek) ? "Igen" : "Nem";
+}
+// if (i < termekek.length) {
+//     span.innerText = "Igen";
+// } else {
+//     span.innerText = "Nem";
+// }
 
 
 
@@ -58,9 +87,11 @@ function beolvas(termekek) {
 
 function bevasarlo(termekek) {
     beolvas(termekek);
-    beolvas(termekek);
-    // osszesAr(termekek);
-    // kerekAr(termekek);
+    osszesAr(termekek);
+    kerekAr(termekek);
+    kerekAr(termekek);
+    kerekAr(termekek);
+    kerekAr(termekek);
     // legdragabb(termekek);
     // dragak();
     // diagram(termekek);
