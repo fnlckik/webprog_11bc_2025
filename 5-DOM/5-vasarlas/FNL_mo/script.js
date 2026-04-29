@@ -1,12 +1,20 @@
 // F1
+// splice(startIndex, end) -> visszatér a tartománnyal (range)
+// splice(startIndex, deleteCount) -> kiveszi az elemeket
 function beolvas(termekek) {
+    // termekek.length = 0
+    termekek.splice(0); // termekek.clear(); -> ürítsük a tömböt ki
     const sorok = document.querySelectorAll("ul li");
     for (const sor of sorok) {
-        console.log(sor.innerText.split(" - "));
+        const darabok = sor.innerText.split(" - "); // ["Sajt", "2849"]
+        const termek = 
+        { 
+            nev: darabok[0], 
+            ar: parseInt(darabok[1])
+        };
+        termekek.push(termek);
     }
 }
-
-
 
 // F2
 
@@ -50,6 +58,7 @@ function beolvas(termekek) {
 
 function bevasarlo(termekek) {
     beolvas(termekek);
+    beolvas(termekek);
     // osszesAr(termekek);
     // kerekAr(termekek);
     // legdragabb(termekek);
@@ -72,7 +81,7 @@ termekek = [
 ]
 */
 function main() {
-    const termekek = [];
+    const termekek = ["Morgó", "Hapci", "Kuka"];
     const kepek = ["sajt", "kave", "tejfol"];
     bevasarlo(termekek);
     // kepekBeszuras(kepek);
