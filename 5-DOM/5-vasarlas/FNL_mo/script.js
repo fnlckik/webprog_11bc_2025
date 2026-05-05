@@ -56,12 +56,55 @@ function kerekAr(termekek) {
 
 
 // F4
+// elemek: <li> "lista"
+// function dragak() {
+//     const elemek = document.querySelectorAll("ul li");
+//     for (const elem of elemek) {
+//         if (parseInt(elem.innerText.split(" - ")[1]) > 2000) {
+//             elem.style.fontWeight = "bold";
+//             const span = elem.childNodes[1];
+//             span.classList.add("draga");
+//         }
+//     }
+// }
 
+// elemek: <span> "lista"
+// function dragak() {
+//     const elemek = document.querySelectorAll("ul li span");
+//     for (const elem of elemek) {
+//         if (parseInt(elem.innerText) > 2000) {
+//             elem.classList.add("draga");
+//             elem.parentNode.style.fontWeight = "bold";
+//         }
+//     }
+// }
+
+function dragak() {
+    const elemek = document.querySelectorAll("ul li");
+    for (const elem of elemek) {
+        if (parseInt(elem.innerText.split(" - ")[1]) > 2000) {
+            elem.style.fontWeight = "bold";
+            const span = elem.querySelector("span"); // az <li> elemben lévő <span> elemet vegyük ki
+            span.classList.add("draga");
+        }
+    }
+}
 
 
 
 // F5
-
+function legdragabb(termekek) {
+    let maxTermek = termekek[0];
+    for (const termek of termekek) {
+        if (termek.ar > maxTermek.ar) {
+            maxTermek = termek;
+        }
+    }
+    // const span = document.getElementById("legdragabb");
+    // span.textContent = maxTermek.nev;
+    const span = document.querySelector("#legdragabb");
+    span.innerText = maxTermek.nev;
+}
 
 
 
@@ -89,11 +132,8 @@ function bevasarlo(termekek) {
     beolvas(termekek);
     osszesAr(termekek);
     kerekAr(termekek);
-    kerekAr(termekek);
-    kerekAr(termekek);
-    kerekAr(termekek);
-    // legdragabb(termekek);
-    // dragak();
+    legdragabb(termekek);
+    dragak();
     // diagram(termekek);
 }
 
