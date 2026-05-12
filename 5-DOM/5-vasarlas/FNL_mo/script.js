@@ -109,12 +109,42 @@ function legdragabb(termekek) {
 
 
 // F6
-
+// ujTermek("Fagyi", 500)
+// ujTermek("Tarja", 2979)
+function ujTermek(nev, ar) {
+    const ul = document.querySelector("ul");
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    // li.innerText = nev + " - ";
+    li.innerText = `${nev} - `;
+    span.innerText = ar;
+    li.appendChild(span);
+    /*
+    const li = document.createElement("li");
+    li.innerHTML = `${nev} - <span>${ar}</span>`;
+    ul.appendChild(li);
+    */
+    // ul.innerHTML += `<li>${nev} - <span>${ar}</span></li>`;
+    bevasarlo([]);
+}
 
 
 
 // F7
-
+function kepekBeszuras(kepek) {
+    const div = document.querySelector("#kepek");
+    for (const kep of kepek) {
+        const img = document.createElement("img");
+        img.src = `./pictures/${kep}.jpg`;
+        img.height = "100";
+        img.alt = kep;
+        img.style.height = "100px";
+        div.appendChild(img);
+        // div.innerHTML += `<img src="pictures/${kep}.jpg" alt=${kep} height="100">`;
+    }
+    div.style.display = "flex";
+    div.style.justifyContent = "space-between";
+}
 
 
 
@@ -155,7 +185,7 @@ function main() {
     const termekek = ["Morgó", "Hapci", "Kuka"];
     const kepek = ["sajt", "kave", "tejfol"];
     bevasarlo(termekek);
-    // kepekBeszuras(kepek);
+    kepekBeszuras(kepek);
     // hivatkozasok();
 }
 
