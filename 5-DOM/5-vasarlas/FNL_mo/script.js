@@ -149,7 +149,36 @@ function kepekBeszuras(kepek) {
 
 
 // F8
-
+// magic number: olyan szám, aminek a funkciója nem érthető közvetlen a kódból
+const MAXVALUE = 3000;
+function diagram(termekek) {
+    // const d = document.getElementById("diagram");
+    const d = document.querySelector("#diagram");
+    for (const termek of termekek) {
+        const div = document.createElement("div");
+        div.innerText = termek.nev;
+        div.style.backgroundColor = "lightgreen";
+        div.style.margin = "1em 0";
+        // div.style.width = (termek.ar / MAXVALUE * 100) + "%";
+        div.style.width = `${termek.ar / MAXVALUE * 100}%`;
+        d.appendChild(div);
+    }
+    const felirat = document.createElement("div");
+    const span1 = document.createElement("span");
+    span1.innerText = 0;
+    const span2 = document.createElement("span");
+    span2.innerText = MAXVALUE;
+    const hr = document.createElement("hr");
+    felirat.append(span1, hr, span2);
+    felirat.id = "felirat";
+    // felirat.innerHTML = `<span>0</span><hr/><span>${MAXVALUE}</span>`;
+    d.appendChild(felirat);
+    // d.innerHTML += `<div id="felirat">
+    //                     <span>0</span>
+    //                     <hr/>
+    //                     <span>${MAXVALUE}</span>
+    //                 </div>`;
+}
 
 
 
@@ -164,7 +193,7 @@ function bevasarlo(termekek) {
     kerekAr(termekek);
     legdragabb(termekek);
     dragak();
-    // diagram(termekek);
+    diagram(termekek);
 }
 
 // Termékek listája:
