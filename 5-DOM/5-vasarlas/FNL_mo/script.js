@@ -183,7 +183,25 @@ function diagram(termekek) {
 
 
 // F9
-
+// Emlék: attribútum szelektor (pl.: radio gombot)
+// input[type="radio"]
+// "alma".replaceAll("a", "A") => "AlmA"
+function hivatkozasok() {
+    const menupontok = document.querySelectorAll("body>div[id]");
+    const div = document.createElement("div");
+    for (const menupont of menupontok) {
+        const a = document.createElement("a");
+        // a.innerText = menupont.id.replace(menupont.id[0], menupont.id[0].toUpperCase());
+        // a.innerText = menupont.id[0].toUpperCase() + menupont.id.slice(1);
+        a.innerText = menupont.id;
+        a.style.textTransform = "capitalize";
+        // a.href = `#${menupont.id}`;
+        a.href = "#" + menupont.id;
+        div.appendChild(a);
+    }
+    const h1 = document.querySelector("h1");
+    h1.before(div);
+}
 
 
 
@@ -215,7 +233,7 @@ function main() {
     const kepek = ["sajt", "kave", "tejfol"];
     bevasarlo(termekek);
     kepekBeszuras(kepek);
-    // hivatkozasok();
+    hivatkozasok();
 }
 
 main();
